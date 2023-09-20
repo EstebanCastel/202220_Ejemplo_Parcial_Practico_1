@@ -15,8 +15,7 @@ public class MedicoEntity extends BaseEntity{
     private String nombre;
     private String apellido;
     private String registroMedico;
-    @Id
-    private Long id;
+
 
     @ManyToMany
     private List<EspecialidadEntity> especialidades = new ArrayList<>();

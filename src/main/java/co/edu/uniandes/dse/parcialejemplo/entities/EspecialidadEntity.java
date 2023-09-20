@@ -13,8 +13,7 @@ import lombok.Data;
 public class EspecialidadEntity extends BaseEntity{
     private String nombre;
     private String descripcion;
-    @Id
-    private Long id;
+
 
     @ManyToMany(mappedBy = "especialidades")
     private List<MedicoEntity> medicos = new ArrayList<>();
